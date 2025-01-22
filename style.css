@@ -277,6 +277,63 @@
   padding: 0.8rem 3.5rem;
   border-radius: 0.8rem;
 }
+
+/* footer related styles  */
+footer {
+  background: var(--skyblue);
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  padding-top: 6.75rem;
+  padding-bottom: 11.5rem;
+}
+.icon img {
+  width: 4.4rem;
+}
+.footer-left .icon {
+  display: flex;
+}
+.footer-title {
+  font-size: 2.6rem;
+  line-height: 2.4rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+.footer-desc {
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  color: #ffffff;
+  width: 80%;
+}
+.footer-middle .middle-title {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.footer-middle ul li {
+  list-style: none;
+  margin-bottom: 1.25rem;
+}
+.footer-middle ul li a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+.footer-right .right-title {
+  font-size: 1.6rem;
+  color: #ffffff;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+.footer-right .image-div {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
 /* media query  */
 @media screen and (max-width: 576px) {
   .max-width {

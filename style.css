@@ -265,7 +265,18 @@
   padding: 0rem 4.25rem 0.5rem 2.3rem;
   font-weight: 800;
 }
-
+.story-btn-div {
+  text-align: center;
+  margin-top: 5rem;
+  padding-bottom: 3.5rem;
+}
+.story-btn {
+  border: none;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 0.8rem 3.5rem;
+  border-radius: 0.8rem;
+}
 /* media query  */
 @media screen and (max-width: 576px) {
   .max-width {

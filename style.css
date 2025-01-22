@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* font related styles  */
+.quicksand {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* shared styles  */
+:root {
+  --orange: #fea301;
+  --skyblue: #01acfd;
+  --lightsky: rgba(5, 212, 223, 1);
+  --purple: rgba(93, 88, 239, 1);
+}
+.btn {
+  border: none;
+  font-size: 1.25rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+.max-width {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* header related styles  */
+.menu-btn {
+  font-size: 2rem;
+  display: none;
+}
+.navbar {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.left-nav .nav-title {
+  font-size: 2rem;
+  font-weight: 800;
+}
+.middle-nav ul {
+  display: flex;
+  align-items: center;
+}
+.middle-nav > ul > li {
+  list-style: none;
+  margin-right: 1.8rem;
+}
+.middle-nav > ul > li > a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+#home {
+  color: var(--orange);
+  font-weight: 800;
+}
+.about {
+  color: var(--skyblue);
+}
+.facilities {
+  color: var(--lightsky);
+}
+.admission {
+  color: var(--purple);
+}
+.nav-btn .btn {
+  background-color: var(--orange);
+  padding: 0.9rem 3.75rem;
+  color: #ffffff;
+}
+
+.nav-hr {
+  border: 1px solid var(--orange);
+  margin-top: 0.8rem;
+  display: none;
+}
+
+/* banner section related styles  */
+.banner-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-title {
+  font-size: 3.5rem;
+  line-height: 3.8rem;
+  margin-bottom: 1.5rem;
+}
+.banner-desc {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  width: 85%;
+}
+.empowering {
+  color: var(--orange);
+}
+.towards {
+  color: var(--skyblue);
+}
+.banner-btn {
+  background-color: #111111;
+  color: #ffffff;
+  padding: 1rem 2.8rem;
+}
+
+/* curriculum section  */
+.curriculum .section-title {
+  margin-top: 3.75rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 800;
+}
+.card-container {
+  display: flex;
+  gap: 1.8rem;
+}
+
+.card {
+  /* width: 33%; */
+  text-align: center;
+  background: linear-gradient(#def5ff, #ffffff 30%);
+  box-shadow: 0px 0px 28px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 1.1rem;
+  padding: 2.5rem;
+}
+#card-2 {
+  background: linear-gradient(#fff4dc, #ffffff00 30%);
+}
+#card-3 {
+  background: linear-gradient(rgb(238, 225, 255), #ffffff 30%);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.curriculum {
+  background: url("assets/bg.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  /* background-size: cover; */
+}
+.card-desc {
+  font-size: 0.9rem;
+  line-height: 1.75rem;
+  margin-bottom: 2rem;
+}
+.section-btn {
+  background-color: transparent;
+  border: none;
+}
+#orange {
+  color: var(--orange);
+}
+#purple {
+  color: var(--purple);
+}
+.section-btn a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--skyblue);
+}
+
+/* arrow section related styles  */
+.arrow-btn {
+  margin-top: 5rem;
+  margin-bottom: 3.75rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.arrow-1,
+.arrow-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.75rem;
+  height: 3.75rem;
+  background-color: var(--orange);
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+/* our stories section  */
+.story-section .section-title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 5rem;
+}
+.story-section-container {
+  background: url("assets/bg.png"),
+    linear-gradient(-180deg, #ffffff 30%, #f9e2b8);
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+.story-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.story-card-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+#item1 {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+.story-card-title {
+  margin-top: 3.6rem;
+}
+.card-desc {
+  position: relative;
+}
+.card-desc .date {
+  position: absolute;
+  top: -85px;
+  left: 50px;
+  background-color: var(--orange);
+  padding: 0.5rem 1.2rem;
+  border-radius: 2.8rem;
+  color: #ffffff;
+}
+
+.card-desc .description {
+  margin-top: 3.6rem;
+}
+/* media query  */
+@media screen and (max-width: 576px) {
+  .max-width {
+    max-width: 90%;
+  }
+  .middle-nav {
+    display: none;
+  }
+  .left-nav .nav-title {
+    display: none;
+  }
+  .nav-btn {
+    display: none;
+  }
+  .menu-btn,
+  .nav-hr {
+    display: block;
+  }
+
+  /* banner  */
+  .banner-section {
+    flex-direction: column-reverse;
+    gap: 1.25rem;
+  }
+  .right-column img {
+    width: 100%;
+  }
+  .banner-title {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2.7rem;
+  }
+  .banner-desc {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .banner-btn1 {
+    text-align: center;
+  }
+
+  /* curriculum section  */
+  .curriculum .section-title {
+    font-size: 1.8rem;
+  }
+  .card-container {
+    flex-direction: column;
+  }
+  /* arrow section related styles  */
+  .arrow-btn {
+    display: none;
+  }
+}

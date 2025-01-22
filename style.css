@@ -216,12 +216,28 @@
 }
 .story-card-container {
   display: grid;
+  grid-gap: 1.1rem;
   grid-template-columns: repeat(4, 1fr);
 }
+.story-card {
+  border-radius: 1rem;
 
+  background-color: #ffffff;
+}
+
+.story-card img {
+  width: 100%;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
 .story-card-title {
   font-size: 1.5rem;
+  padding: 0rem 4.25rem 2.2rem 2.3rem;
   font-weight: 800;
+}
+.story-card-desc {
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0rem 4.25rem 0.5rem 2.3rem;
 }
 #item1 {
   grid-column: 1 / span 2;
@@ -245,7 +261,11 @@
 
 .card-desc .description {
   margin-top: 3.6rem;
+  font-size: 0.9rem;
+  padding: 0rem 4.25rem 0.5rem 2.3rem;
+  font-weight: 800;
 }
+
 /* media query  */
 @media screen and (max-width: 576px) {
   .max-width {
@@ -296,5 +316,28 @@
   /* arrow section related styles  */
   .arrow-btn {
     display: none;
+  }
+
+  /* our stories  */
+  .story-section-container {
+    margin-top: 4rem;
+  }
+  #item1 {
+    display: none;
+  }
+  .story-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card-desc .description {
+    font-size: 0.8rem;
+    padding: 0rem 1.25rem 0rem 0.8rem;
+    color: #000000;
+    margin-top: 1.3rem;
+  }
+  .card-desc .date {
+    padding: 0.2rem 0.8rem;
+    font-size: 0.5rem;
+    left: 30px;
+    top: -43px;
   }
 }

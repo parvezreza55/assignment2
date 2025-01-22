@@ -19,6 +19,15 @@
   --lightsky: rgba(5, 212, 223, 1);
   --purple: rgba(93, 88, 239, 1);
 }
+.olive {
+  background-color: rgba(149, 178, 38, 1);
+}
+.purple {
+  background-color: rgba(93, 88, 240, 1);
+}
+.lightsky {
+  background-color: rgba(60, 216, 232, 1);
+}
 .btn {
   border: none;
   font-size: 1.25rem;
@@ -28,6 +37,13 @@
 .max-width {
   width: 80%;
   margin: 0 auto;
+}
+.scrool-text {
+  margin-top: 1rem;
+  background: rgba(71, 180, 231, 0.667);
+  padding: 2rem;
+  color: #ffffff;
+  font-size: 1.8rem;
 }
 
 /* header related styles  */
@@ -254,7 +270,7 @@
   position: absolute;
   top: -85px;
   left: 50px;
-  background-color: var(--orange);
+
   padding: 0.5rem 1.2rem;
   border-radius: 2.8rem;
   color: #ffffff;
